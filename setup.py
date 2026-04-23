@@ -22,9 +22,13 @@ setup(
             'pytest',
         ],
     },
-    entry_points={
-        'console_scripts': [
-		'rrtfn_node = rrtfn_planner.rrtfn_node:main'
-        ],
-    },
+
+	entry_points={
+    			'console_scripts': [
+       				 'rrtfn_node = rrtfn_planner.rrtfn_node:main',
+        			 'arm_tracker = rrtfn_planner.arm_tracker:main',
+        			 'benchmark = rrtfn_planner.benchmark:main',
+    ],
+},
+
 )
